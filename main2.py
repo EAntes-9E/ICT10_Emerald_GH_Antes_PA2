@@ -7,7 +7,10 @@ def students_classifications(e):
 
     classification = float(document.getElementById('number1').value)
 
-    if classification >= 95:
+    if classification >= 101:
+        display(f'Not possible!', target='result')
+    
+    elif classification >= 95:
         display(f'Bergamo 1', target='result')
 
     elif classification >= 91:
